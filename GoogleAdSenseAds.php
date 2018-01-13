@@ -46,12 +46,12 @@ $wgExtensionCredits['other'][] = array(
 	'version'        => '2.2.0',
 	'author'         => '[https://about.suriyaa.tk/ Suriyaa Sundararuban] and Siebrand Mazeland',
 	'descriptionmsg' => 'googleadsense-desc',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Google_AdSense_Ads',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:GoogleAdSenseAds',
 	'license-name'   => 'MIT',
 );
 
 // Register class and localisations
-$wgAutoloadClasses['GoogleAdSense'] = __DIR__ . '/GoogleAdSense.class.php';
+$wgAutoloadClasses['GoogleAdSense'] = __DIR__ . '/GoogleAdSenseAds.class.php';
 $wgMessagesDirs['GoogleAdSense'] = __DIR__ . '/i18n';
 
 // Hook to modify the sidebar
@@ -61,5 +61,5 @@ $wgHooks['SkinBuildSidebar'][] = 'GoogleAdSense::GoogleAdSenseInSidebar';
 $wgResourceModules['ext.googleadsense'] = array(
 	'styles' => 'resources/ext.googleadsense.css',
 	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GoogleAdSense'
+	'remoteExtPath' => 'GoogleAdSenseAds'
 );
